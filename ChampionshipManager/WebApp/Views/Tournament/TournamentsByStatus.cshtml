@@ -1,0 +1,91 @@
+﻿@using WebApp.Models.Tournament
+@model IEnumerable<TournamentViewModel>
+
+@{ 
+    string status = ViewBag.Status;
+
+    const string NOT_STARTED = "Not Started";
+    const string SENDED_REQUEST = "Sended Request";
+}
+
+<header class="text-center tournament-header">
+    <h3> Список турниров, @status </h3>
+</header>
+
+<main>
+    @if (Model.Count() == 0)
+    {
+        <article>
+            <h4 class="text-center">
+                У Вас нет ни одного турнира с таким статусом
+            </h4>
+        </article>
+    }
+    else
+    {
+        foreach (var tournament in Model)
+        {
+            <article class="tournament-container">
+                <div class="row header-tournament-row">
+
+                    <span class="col-lg-4 text-bold text-center">
+                        Турнир - @tournament.Name
+                    </span>
+
+                    <span class="col-lg-4 text-bold text-center">
+                        Ваше количество очков - @tournament.PointNumber
+                    </span>
+
+                    <span class="col-lg-4 text-bold text-center">
+                        Количество сыгранных игр - @tournament.GamesCount
+                    </span>
+                </div>
+                <div id="tournamentContent-@tournament.Id">
+                    @if (status == NOT_STARTED || status == SENDED_REQUEST)
+                    {
+                        Html.RenderAction("TournamentParticipates", new { tournamentId = tournament.Id });
+                    }
+                    else
+                    {
+                        Html.RenderAction("TournamentGames", new { tournamentId = tournament.Id });
+                    }
+                </div>
+
+                <div class="row footer-tournament-row">
+                    @if (status == NOT_STARTED || status == SENDED_REQUEST)
+                    {
+                        <div class="col-lg-12 text-center">
+                            <span class="tournament-footer-subscribe">
+                                Наименование турнира, количество очек - @tournament.PointNumber
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-lg-9 text-center">
+                            <span class="tournament-footer-subscribe">
+                                Наименование турнира, количество очек - @tournament.PointNumber
+                            </span>
+                        </div>
+                        <div class="col-lg-1 text-center tournament-footer-link" onclick="loadGames(@tournament.Id);">
+                            <a href="#" id="gamesDisplayBtn#id">
+                                Игры
+                            </a>
+                        </div>
+                        <div class="col-lg-1 text-center tournament-footer-link" onclick="loadStatistic(@tournament.Id);">
+                            <a href="#" id="statisticDisplayBtn#id">
+                                Статистика
+                            </a>
+                        </div>
+                        <div class="col-lg-1 text-center tournament-end-footer-link">
+                            <a href="#" id="participateDisplayBtn#id" onclick="loadParticipates(@tournament.Id);">
+                                Участники
+                            </a>
+                        </div>
+                    }
+                </div>
+
+            </article>
+        }
+    }
+</main>

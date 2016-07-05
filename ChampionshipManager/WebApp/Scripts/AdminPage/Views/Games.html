@@ -1,0 +1,170 @@
+﻿<article class="tournament-container">
+
+    <header class="margin-bottom-20">
+        <h2>
+            Управление играми турнира
+        </h2>
+    </header>
+
+    <div class="circle-wrapper margin-top-20">
+        <div class="circle"></div>
+        <div class="circle margin-left-40"></div>
+        <div class="circle margin-left-40"></div>
+    </div>
+
+    <table class="table admin-games-table">
+
+        <thead>
+
+            <tr class="row">
+
+                <th class="col-lg-3 text-center">
+                    Первый оппонент
+                </th>
+
+                <th class="col-lg-2 text-center">
+                    Cчет
+                </th>
+
+                <th class="col-lg-3 text-center">
+                    Вторый оппонент
+                </th>
+
+                <th class="col-lg-2 text-center">
+                    Дата
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody class="text-center" ng-show="Games.length == 0">
+            <tr>
+                <td colspan="4">
+                    <i>
+                        В турнире нет ни одной запланированной игры
+                    </i>
+                </td>
+            </tr>
+        </tbody>
+
+        <tbody ng-show="Games.length > 0">
+
+            <tr class="row admin-game-row" ng-repeat="game in Games">
+
+                <td class="col-lg-3 text-center" ng-bind="game.User1.Name">
+                    Первый оппонент
+                </td>
+
+                <td class="col-lg-2 text-center" ng-bind="game.ResultView">
+                    Cчет
+                </td>
+
+                <td class="col-lg-3 text-center" ng-bind="game.User2.Name">
+                    Вторый оппонент
+                </td>
+
+                <td class="col-lg-2 text-center" ng-bind="game.Start">
+                </td>
+
+                <td class="col-lg-2 text-right">
+                    <a href="#/gamesManagement" class="btn btn-info" ng-click="editGame(game);">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </a>
+
+                    <a href="#/gamesManagement" class="btn btn-info" data-toggle="tooltip" 
+                       data-placement="bottom" title="Irrevocable action"
+                       ng-click="deleteGame(game);">
+                        <span class="glyphicon glyphicon-remove-circle"></span>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+    <form id="gameCreateForm" method="post">
+        <div class="game-edit-container row">
+            <div class="col-lg-3 game-participate-1">
+                <input type="text" list="Users1" class="form-control" placeholder="Первый участник"
+                       ng-model="User1.Name" ng-change="Users2 = filterCollection( Users, User1);" 
+                       required ng-disabled="editedGame != null"/>
+            </div>
+
+            <datalist id="Users1">
+                <select>
+                    <option ng-repeat="user in Users1" value="{{user.Name}}"></option>
+                </select>
+            </datalist>
+
+            <div class="col-lg-2 no-paddings">
+                <input type="number" class="form-control num-input no-paddings padding-left-10" 
+                       ng-model="FirstScore" min="0"/>
+
+                <span>
+                    :
+                </span>
+
+                <input type="number" class="form-control num-input no-paddings padding-left-10" 
+                       ng-model="SecondScore" min="0"/>
+            </div>
+
+            <div class="col-lg-3 game-participate-2">
+                <input type="text" list="Users2" class="form-control" placeholder="Вторый участник"
+                       ng-model="User2.Name" ng-change="Users1 = filterCollection(Users, User2);" 
+                       required ng-disabled="editedGame != null" />
+            </div>
+
+            <datalist id="Users2">
+                <select>
+                    <option ng-repeat="user in Users2" value="{{user.Name}}"></option>
+                </select>
+            </datalist>
+
+            <div class="col-lg-2 no-paddings padding-left-10">
+                <input type="date" class="form-control no-aside-paddings" placeholder="Дата проведения" 
+                       ng-model="Date"/>
+            </div>
+
+            <div class="col-lg-2">
+                <input type="time" class="form-control" placeholder="Время проведения" 
+                       ng-model="Time"/>
+            </div>
+
+        </div>
+
+        <input type="submit" class="hidden" id="submitForm" />
+    </form>
+
+    <div class="row" ng-show="hasError">
+        <div class="col-lg-offset-3 text-danger admin-game-error-message">
+            <span ng-bind="ErrorMessage">
+                error message
+            </span>
+        </div>
+    </div>
+
+    <div class="circle-wrapper margin-top-20">
+        <div class="display-inline-block">
+            <a href="#" onclick="return false;" class="btn btn-danger circle rule-circle danger-circle"
+               ng-click="clearFields();">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+        <div class="margin-left-40 display-inline-block">
+            <a href="#" onclick="return false;" class="btn btn-success circle rule-circle success-circle"
+               ng-click="createGame()">
+                <span class="glyphicon glyphicon-ok"></span>
+            </a>
+        </div>
+        <div class="margin-left-40 display-inline-block">
+            <a href="#" onclick="return false;" class="btn btn-danger circle rule-circle danger-circle"
+               ng-click="clearFields();">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+    </div>
+
+</article>

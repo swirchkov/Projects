@@ -1,0 +1,79 @@
+﻿<div class="login-container">
+
+    <div class="text-center login-header">
+
+        <div class="login-header-title">
+
+            Создайте новый турнир
+
+        </div>
+
+    </div>
+
+    <form method="post" ng-submit="createTournament()" id="createForm">
+
+        <div class="login-body">
+
+            <div class="form-group">
+
+                <label class="col-lg-4 text-right login-label" for="Login">
+                    Название турнира
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="text" name="Name" id="Name" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Лого турнира
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="file" name="Logo" id="LogoFile" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Вид спорта 
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="text" name="SportKind" id="SportKind" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Количество учасников
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="number" name="ParticipateNumber" id="ParticipateNumber" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group text-center validation-exception-display" id="CreateTournamentValidation">
+            </div>
+
+        </div>
+
+        <div class="login-footer text-center">
+            <div class="submit-btn">
+                <input type="submit" class="btn btn-success" value="Создать" />
+            </div>
+        </div>
+
+    </form>
+
+</div>
+

@@ -1,0 +1,115 @@
+﻿@model WebApp.Models.Account.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="login-container">
+
+    <div class="text-center login-header">
+
+        <div class="login-header-title">
+
+            Зарегистрируйтесь на сайте
+
+        </div>
+
+    </div>
+
+    <form method="post" enctype="multipart/form-data">
+
+        <div class="login-body">
+
+            <div class="form-group">
+
+                <label class="col-lg-4 text-right login-label" for="Login">
+                    Электронный адрес
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="email" name="Email" id="Email" class="form-control" required/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="FullName" class="col-lg-4 text-right login-label">
+                    Полное имя 
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="text" name="FullName" id="FullName" class="form-control" pattern="[^ ]+ [^ ]+ [^ ]+" required 
+                           title="firstname patronymic surname"/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber" class="col-lg-4 text-right login-label">
+                    Номер телефона
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" class="form-control"  required 
+                           pattern="[(]?\d{3}[)]?\s\d{7}" title="example '(099) 1111111''"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Ваше фото
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="file" name="Photo" id="Photo" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Пароль
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="password" name="Password" id="Password" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Подтверждение пароля
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" class="form-control" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Комментарий к профилю
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <textarea name="Comment" class="form-control" rows="5" required>
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-footer text-center row">
+            <div class="submit-btn row">
+                <input type="submit" class="btn btn-success" value="Зарегистрироватся" />
+            </div>
+            <div class="row text-center">
+                <a href="/Account/Login" type="button" class="btn margin-top-20 register-login-link float-none">
+                    Есть аккаунт? Авторизируйтесь
+                </a>
+            </div>
+        </div>
+
+    </form>
+
+</div>

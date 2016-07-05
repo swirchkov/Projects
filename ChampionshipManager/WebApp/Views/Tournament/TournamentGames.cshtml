@@ -1,0 +1,34 @@
+﻿@using BLL.DTO;
+@model IEnumerable<GameDTO>
+
+@{ 
+    bool inverse = false;
+    UserDTO user = (UserDTO)Session["User"];
+}
+
+@foreach (GameDTO game in Model)
+{
+    string clas = inverse ? "tournament-game-row-inverse" : "tournament-game-row";
+    string date = inverse ? "date-game-field-inverse" : "date-game-field";
+    inverse = !inverse;
+    string firstUserHighLight = game.Participates.FirstOrDefault().Id == user.Id ? "text-info" : "";
+    string secondUserHighLight = game.Participates.LastOrDefault().Id == user.Id ? "text-info" : "";
+
+    <div class="row @clas">
+        <span class="col-lg-4 text-center @firstUserHighLight">
+            @game.Participates.FirstOrDefault().Name
+        </span>
+
+        <span class="col-lg-4 text-center">
+            @game.ResultView
+        </span>
+
+        <span class="col-lg-2 text-right @secondUserHighLight">
+            @game.Participates.LastOrDefault().Name
+        </span>
+
+        <span class="col-lg-2 text-center @date">
+            @game.Start.ToString()
+        </span>
+    </div>
+}

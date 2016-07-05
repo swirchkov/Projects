@@ -1,0 +1,86 @@
+﻿@using WebApp.Models.Tournament;
+@using BLL.DTO;
+@model TournamentParticipateViewModel
+
+<header class="text-center text-italic border-underline">
+
+    @if (!Model.IsStarted)
+    {
+        <text> Участники </text>
+    }
+    else
+    {
+        <text> Турнирная таблица </text>
+    }
+
+</header>
+
+
+<ol class="list-group participate-info-list">
+    @if (Model.IsStarted)
+    {
+        foreach (ParticipateViewModel user in Model.Participates)
+        {
+            <li class="list-group-item ">
+                <div class="display-inline-block">
+                    <img src="@user.Photo" width="25" height="20" />
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Name  @user.Surname
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Email
+                </div>
+
+                <span class="badge">
+                    @user.PointNumber
+                </span>
+            </li>
+        }
+    }
+    else
+    {
+        foreach (ParticipateViewModel user in Model.Participates)
+        {
+            <li class="list-group-item ">
+                <div class="display-inline-block">
+                    <img src="@user.Photo" width="25" height="20" />
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Name  @user.Surname
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Email
+                </div>
+
+                <span class="badge">
+                    Accepted to tournament
+                </span>
+            </li>
+        }
+        foreach (UserDTO user in Model.ParticipateRequests)
+        {
+            <li class="list-group-item ">
+                <div class="display-inline-block">
+                    <img src="@user.Photo" width="25" height="20" />
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Name  @user.Surname
+                </div>
+
+                <div class="display-inline-block padding-left-20">
+                    @user.Email
+                </div>
+
+                <span class="badge">
+                    Waiting for answer
+                </span>
+            </li>
+        }
+    }
+</ol>

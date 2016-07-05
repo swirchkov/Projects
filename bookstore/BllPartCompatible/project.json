@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "description": "BllPartCompatible Class Library",
+  "authors": [ "Владимир" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "net451": {
+      "dependencies": {
+        "DalPartCompatible": "1.0.0-*"
+      },
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0"
+      }
+    }
+  },
+  "dependencies": {
+    "GemBox.Document": "25.3.30.1167"
+  }
+}

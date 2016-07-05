@@ -1,0 +1,4 @@
+﻿Id, TournamentId, WinnerId, ResultView, Start
+"1", "1", "1", "winner", "12/12/2016",
+"2", "1", "1", "WinnerEdit", "12/12/2016",
+"3", "1", "1", "WinnerDelete", "12/23/2016"

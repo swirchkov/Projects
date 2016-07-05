@@ -1,0 +1,63 @@
+﻿@using BLL.DTO;
+@model TournamentTableDTO
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+            <th class="tournament-statistics-cell text-center">
+                Пользователи
+            </th>
+            @foreach (UserDTO user in Model.Users)
+            {
+                <th class="tournament-statistics-cell text-center">
+                    @user.Name
+                </th>
+            }
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (UserDTO user in Model.Users)
+        {
+            <tr>
+                <td class="tournament-statistics-cell text-center">
+                    @user.Name
+                </td>
+                @foreach (UserDTO user2 in Model.Users)
+                {
+                    if (user.Id == user2.Id)
+                    {
+                        <td class="tournament-statistics-cell self-play-cell">
+                        </td>
+                    }
+                    else
+                    {
+                        IEnumerable<GameDTO> games = Model[user,user2];
+
+
+                        <td class="tournament-statistics-cell text-center">
+                            @if (games != null)
+                            {
+                                <text> | </text>
+                                foreach (GameDTO game in games)
+                                {
+                                    <text> @game.ResultView | </text>
+                                }
+                            }
+                            else
+                            {
+                                <text> - </text>
+                           }
+                        </td>
+                    }
+                }
+            </tr>
+        }
+
+    </tbody>
+
+</table>

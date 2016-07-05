@@ -1,0 +1,128 @@
+﻿<article class="tournament-container">
+
+    <header>
+        <h2>
+            Управление турниром
+        </h2>
+    </header>
+
+    <table class="table table-underline" ng-show="Requests.length > 0 || Participates.length > 0">
+        <thead>
+            <tr class="row">
+                <th class="col-lg-4 text-center" >
+                    Аватар
+                </th>
+                <th class="col-lg-8 text-center">
+                    Инфо
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="row" ng-repeat="user in Participates">
+
+                <td class="col-lg-4">
+                    <img ng-src="{{ user.Photo }}" width="170" height="100" class="img-circle" />
+                </td>
+
+                <td class="col-lg-8">
+
+                    <div class="row">
+
+                        <span ng-bind="user.Name">
+                        </span>
+
+                        <span class="padding-left-20" ng-bind="user.Email">
+                        </span>
+
+                        <span class="text-success padding-left-20">
+                            Пользователь уже участник турнира
+                        </span>
+                    </div>
+
+                    <div class="row accept-container">
+
+                        <a href="#/manageTournament" class="text-danger padding-left-20 warn-by-message" ng-click="removeFromTournament(user);">
+                            <span class="glyphicon glyphicon-remove"></span> Исключить с турнира
+                        </a>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+            <tr class="row" ng-repeat="user in Requests">
+
+                <td class="col-lg-4">
+                    <img ng-src="{{ user.Photo }}" width="170" height="100" class="img-circle" />
+                </td>
+
+                <td class="col-lg-8">
+
+                    <div class="row">
+
+                        <span ng-bind="user.Name">
+                        </span>
+
+                        <span class="padding-left-20" ng-bind="user.Email">
+                        </span>
+
+                    </div>
+
+                    <div class="row accept-container">
+
+                        <a href="#/manageTournament" ng-click="acceptParticipateRequest(user)">
+                            <span class="glyphicon glyphicon-ok"></span> Accept
+                        </a>
+
+                        <a href="#/manageTournament" class="text-danger padding-left-20 warn-by-message" ng-click="declineParticipateRequest(user)">
+                            <span class="glyphicon glyphicon-remove"></span> Decline
+                        </a>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div ng-show="Requests.length == 0 && Participates.length == 0" class="text-italic">
+        <p> Нет ни одного участника или запрроса на участие в данном турнире. </p>
+        
+        <a href="#/tournaments" > Вернуться к турнирам </a>
+    </div>
+
+    <span class="text-italic margin-top-20" ng-show="Requests.length > 0 || Participates.length > 0">
+        Tournament status - <span ng-bind="Tournament.Status"></span>
+    </span>
+
+    <div class="row accept-container no-margins" ng-show="Requests.length > 0 || Participates.length > 0">
+        <div class="col-lg-3">
+            <a href="#/manageTournament" ng-class="Tournament.IsStarted ? 'link-disabled' : ''" ng-click="startTournament();">
+                Start Tournament
+            </a>
+        </div>
+
+        <div class="col-lg-3">
+            <a href="#/manageTournament" ng-class="( !Tournament.IsStarted || Tournament.IsFinish) ? 'link-disabled' : ''">
+                Finish Tournament
+            </a>
+        </div>
+
+        <div class="col-lg-3">
+            <a href="#/manageTournament" class="link-disabled" onclick="return false;" >
+                Participates
+            </a>
+        </div>
+
+        <div class="col-lg-3">
+            <a href="#/gamesManagement" ng-class="( !Tournament.IsStarted || Tournament.IsFinish) ? 'link-disabled' : ''">
+                Games
+            </a>
+        </div>
+    </div>
+
+</article>

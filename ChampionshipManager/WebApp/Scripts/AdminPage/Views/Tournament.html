@@ -1,0 +1,65 @@
+﻿<header class="row admin-tournament-header">
+    <h2 class="col-lg-10 text-center no-margins">
+        Управление турнирами
+    </h2>
+
+    <div class="col-lg-2 admin-tournament-create-container">
+        <a href="#/createTournament">
+            Создать турнир
+        </a>
+    </div>
+
+</header>
+
+<article>
+
+    <div class="admin-search-container row">
+        <div class="col-lg-offset-4 col-lg-4 search-wrapper admin-tournament-search-wrapper row">
+            <div class="col-lg-10">
+                <input type="text" class="form-control layout-search-box" ng-model="SearchPattern"
+                       placeholder="Введите запрос для поиска турнира по имени" />
+            </div>
+            
+            <a class="col-lg-2 btn btn-info layout-search-btn" href="#" ng-click="searchTournaments();">
+                <span class="glyphicon glyphicon-search">
+
+                </span>
+            </a>
+
+        </div>
+    </div>
+    
+    <div class="admin-tournament-container">
+        <header class="admin-search-result-header row">
+            <div class="col-lg-offset-8 text-center admin-search-title">
+                Турниры по заданным параметрам
+            </div>
+        </header>
+        <div class="row">
+
+            <div class="col-lg-6 row" ng-repeat="tour in Tournaments">
+                <header>
+                    <span class="text-bold" ng-bind="tour.Name">
+                    </span>
+                </header>
+                <div class="col-lg-5 tournament-image " ng-class="Tournaments.indexOf(tour) % 2 == 1 ? 'col-lg-push-6' : ''">
+                    <img ng-src="{{ tour.Logo }}" class="img-circle tournament-image-element"
+                         height="150" />
+                </div>
+
+                <div class="col-lg-6 text-left tournament-image-info" ng-class="Tournaments.indexOf(tour) % 2 == 1 ? 'col-lg-pull-5 tournament-image-info-inverse' : ''">
+
+                    Количество учасников - {{ tour.CurrentParticipateNumber }} ({{ tour.RequiredParticipateNumber }})
+
+                    <br />
+                    Статус турнира - {{ tour.Status }}
+
+                    <a href="#/manageTournament" class="participate-link" ng-click="selectTournament(tour)">
+                        Управлять турниром
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

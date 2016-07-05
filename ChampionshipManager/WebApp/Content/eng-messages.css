@@ -1,0 +1,3 @@
+﻿.warn-by-message:hover::after {
+    content: 'irrevocable action';
+}

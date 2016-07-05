@@ -1,0 +1,343 @@
+<html lang="ru" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookStore | Та&nbsp;самая&nbsp;читалка</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta property="og:site_name" content="BookStore">
+<meta name="dcterms.format" content="text/html">
+<meta name="dcterms.publisher" content="BookStore.ORG Limited">
+<meta name="twitter:card" content="summary">
+<meta name="dcterms.type" content="Text">
+<meta name="twitter:site" content="@BookStore">
+<meta name="twitter:url" content="https://ru.BookStore.org/">
+<meta name="twitter:title" content="BookStore">
+<meta name="twitter:creator:id" content="4503599627557928">
+<meta name="twitter:creator" content="@BookStore">
+<meta name="twitter:site:id" content="4503599627557928">
+<meta name="dcterms.subject" content="ebook reader">
+<meta name="dcterms.creator" content="BookStore.ORG Limited">
+<meta name="dcterms.title" content="BookStore">
+<link rel="shortlink" href="https://ru.BookStore.org/">
+<link rel="canonical" href="https://ru.BookStore.org/">
+<meta name="description" content="Свободная программа для чтения электронных книг. Понимает fb2, ePub, mobi и другие форматы. Дополнительные возможности: OPDS, синхронизация с облаком, закладки.">
+<meta name="dcterms.identifier" content="https://ru.BookStore.org/">
+<meta property="og:title" content="BookStore">
+<meta name="robots" content="follow, index">
+<meta name="keywords" content="e-book, book reader, e-book reader, OPDS, ePub, ePub reader, e-reader">
+<meta property="og:url" content="https://ru.BookStore.org/">
+<meta property="og:type" content="website">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+  <link type="text/css" rel="stylesheet" href="https://ru.BookStore.org/sites/default/files/css/css_vdp-o_1Sg83F0telBl_mJK-loY3ExKdJe3fM3ugiLIM.css" media="all">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/sites/all/themes/cobra/images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="apple-touch-icon" href="/sites/all/themes/cobra/images/logo-60x60.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/sites/all/themes/cobra/images/logo-76x76.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/sites/all/themes/cobra/images/logo-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/sites/all/themes/cobra/images/logo-152x152.png">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<style type="text/css"></style></head>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-374 node-type-page domain-ru-BookStore-org i18n-ru">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+<div class="main-container container">
+
+  <header role="banner" id="page-header" class="header-container clearfix">
+    <div class="col-sm-5 col-md-4 col-lg-3">
+      <div class="site-name">
+                  <a class="name" href="/" title="Home">BookStore</a>
+                          <p class="lead">Та&nbsp;самая&nbsp;читалка</p>
+              </div>
+    </div>
+    <div class="col-sm-7 col-md-8 col-lg-9">
+        <div class="region region-header">
+    
+<section id="block-menu-block-1" class="block block-menu-block col-md-8 main-menu clearfix">
+
+      
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <a id="main-menu-toggle" href="#" class="nav-toggle" aria-hidden="true"><i class="fa fa-bars"></i></a><ul class="menu nav nav-collapse nav-collapse nav-collapse-0 closed" aria-hidden="false" style="transition: max-height 284ms; position: relative;"><li class="first expanded menu-mlid-1340 dropdown"><a href="/content/about-BookStore" data-target="#" class="dropdown-toggle" data-toggle="dropdown">BookStore <span class="caret"></span></a><ul class="dropdown-menu"><li class="first expanded menu-mlid-1342"><a href="/BookStoreJ">для Android</a><ul class="menu nav"><li class="first leaf menu-mlid-1348"><a href="/node/8" title="">дополнительные модули</a></li>
+<li class="last leaf menu-mlid-2134"><a href="/content/special-editions">специальные версии</a></li>
+</ul></li>
+<li class="leaf menu-mlid-1996"><a href="/content/BookStore-windows-phone">для Windows Phone</a></li>
+<li class="leaf menu-mlid-1346"><a href="/content/blackberry10">для Blackberry 10</a></li>
+<li class="leaf menu-mlid-2394"><a href="/content/jolla">для Jolla/SailfishOS</a></li>
+<li class="leaf menu-mlid-1343"><a href="/win32">для Windows</a></li>
+<li class="leaf menu-mlid-1344"><a href="/content/macos" title="">для Mac OS X</a></li>
+<li class="leaf menu-mlid-1345"><a href="/content/BookStore-beta-linux-desktop" title="">для Linux</a></li>
+<li class="last leaf menu-mlid-1347"><a href="/content/other-platforms" title="">для других платформ</a></li>
+</ul></li>
+<li class="leaf menu-mlid-506"><a href="/news" title="">Новости</a></li>
+<li class="leaf menu-mlid-2759"><a href="https://books.BookStore.org/" title="">Мои книги</a></li>
+<li class="last expanded menu-mlid-520 dropdown"><a href="/content/documentation" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Ещё <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1324"><a href="/faq-page" title="">Вопросы и ответы</a></li>
+<li class="leaf menu-mlid-1825"><a href="/content/documentation/how-to-buy-books-litres">Покупка книг (ЛитРес)</a></li>
+<li class="leaf menu-mlid-571"><a href="/content/books" title="">Где искать книги</a></li>
+<li class="leaf menu-mlid-2762"><a href="/content/documentation" title="">Документация</a></li>
+<li class="last leaf menu-mlid-508"><a href="/content/about-us">О нас</a></li>
+</ul></li>
+</ul></div>
+  </div>
+
+</section> <!-- /.block -->
+
+<section id="block-search-form" class="block block-search col-md-4 head-search clearfix">
+
+      
+  <div class="content">
+    <form class="form-search content-search" action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div>
+      <h2 class="element-invisible">Search form</h2>
+    <div class="input-group"><input title="Enter the terms you wish to search for." placeholder="Search" class="form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128"><span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></span></div><button class="element-invisible btn btn-primary form-submit" id="edit-submit" name="op" value="Search" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+<input type="hidden" name="form_build_id" value="form-o4H3tqUKcyBV-bJWHFbvCmLu6FTf6tylnQLxbnjOFKc">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form>  </div>
+
+</section> <!-- /.block -->
+  </div>
+    </div>
+  </header> <!-- /#page-header -->
+
+    <div class="content-wrapper row clearfix">
+
+    <section class="content-section col-sm-12">
+                              <a id="main-content"></a>
+                                                                <div class="region region-content">
+    
+<section id="block-block-8" class="block block-block col-sm-12 col-md-6 front-slides hidden-xs clearfix">
+
+      
+  <div class="content">
+    <ul class="slick-initialized slick-slider"><div class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 2100px; transform: translate3d(-450px, 0px, 0px);"><li class="slick-slide slick-cloned" index="-3" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-text-small.jpg" alt=""></a></li><li class="slick-slide slick-cloned" index="-2" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-oldlib-small.jpg" alt=""></a></li><li class="slick-slide slick-cloned" index="-1" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-shift-small.jpg" alt=""></a></li><li class="slick-slide slick-active" index="0" style="width: 140px;"><a href="/content/bookshelf-plugin"><img src="/files/images/slides/ru/new/ru-lib-small.jpg" alt=""></a></li><li class="slick-slide slick-active" index="1" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-bookinfo-small.jpg" alt=""></a></li><li class="slick-slide slick-active" index="2" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-3d-small.jpg" alt=""></a></li><li class="slick-slide" index="3" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-litres-small.jpg" alt=""></a></li><li class="slick-slide" index="4" style="width: 140px;"><a href="/content/bookshelf-plugin"><img src="/files/images/slides/ru/new/ru-newshelf-small.jpg" alt=""></a></li><li class="slick-slide" index="5" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-text-small.jpg" alt=""></a></li><li class="slick-slide" index="6" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-oldlib-small.jpg" alt=""></a></li><li class="slick-slide" index="7" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-shift-small.jpg" alt=""></a></li><li class="slick-slide slick-cloned" index="8" style="width: 140px;"><a href="/content/bookshelf-plugin"><img src="/files/images/slides/ru/new/ru-lib-small.jpg" alt=""></a></li><li class="slick-slide slick-cloned" index="9" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-bookinfo-small.jpg" alt=""></a></li><li class="slick-slide slick-cloned" index="10" style="width: 140px;"><a href="/BookStoreJ"><img src="/files/images/slides/ru/new/ru-3d-small.jpg" alt=""></a></li></div></div>
+
+
+
+
+
+
+
+<button type="button" class="slick-prev" style="display: block;"><span class="glyphicon glyphicon-chevron-left"></span></button><button type="button" class="slick-next" style="display: block;"><span class="glyphicon glyphicon-chevron-right"></span></button></ul>  </div>
+
+</section> <!-- /.block -->
+<div id="block--managed-2" class="block block--managed col-xs-12 hidden-md hidden-lg">
+
+    
+  <div class="content">
+    <div style="text-align:center"><div class="adsense">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2893951243869957" data-ad-slot="8497739426" data-ad-format="horizontal"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>  </div>
+</div>
+
+<section id="block-block-7" class="block block-block col-xs-12 col-md-6 about-block top-padded-xs top-padded-sm clearfix">
+
+        <h2 class="block-title"><span>Что такое BookStore</span></h2>
+    
+  <div class="content">
+    <div class="node-text">
+<ul><li>BookStore – свободно распространяемая программа для чтения электронных книг.</li>
+<li>BookStore понимает популярные форматы, включая ePub, fb2, mobi, html, и множество менее известных.</li>
+<li>Сетевая библиотека объединяет бесплатные и платные каталоги. Скачивайте и покупайте книги прямо из BookStore.</li>
+<li>Настройте цвета, шрифты, способ листания страниц и многое другое. Сделайте чтение удобным именно для вас!</li>
+</ul></div>
+  </div>
+
+</section> <!-- /.block -->
+<div class="panel-display panel-1col clearfix">
+  <div class="panel-panel panel-col">
+    <div></div>
+  </div>
+</div>
+  </div>
+        <div class="region region-content-bottom">
+    
+<section id="block-views-content-block-1" class="block block-views col-xs-12 col-sm-6 col-md-5 col-lg-4 front-news clearfix">
+
+        <h2 class="block-title"><span><a href="/news" class="block-title-link">Новости</a></span></h2>
+    
+  <div class="content">
+    <div class="view view-content view-id-content view-display-id-block_1 node-text view-dom-id-131f752f15daac1fe7fcfcf650d5ce71">
+        
+  
+  
+      <div class="view-content">
+      <div class="news-list">    <ul>          <li class="">  
+          <h3><a href="/content/bookshelf-free-upgrade-BookStore-premium">Книжная полка: бесплатное обновление до BookStore Premium</a></h3>    
+          <div class="add-date">3 марта 2016 года</div>    
+          <div class="summary">Все, кто купил платную версию книжной полки, могут получить промокод для бесплатной установки BookStore Premium.<br>
+Если вы уже успели купить и BookStore Premium, вы всё равно можете получить код, и подарить его кому-нибудь.<br>
+Подробная инструкция</div>  </li>
+          <li class="">  
+          <h3><a href="/content/BookStore-269-format-plugins-158">BookStore 2.6.9 и модули 1.5.8</a></h3>    
+          <div class="add-date">26 февраля 2016 года</div>    
+          <div class="summary">Ещё одно обновление, исправляющее ошибки, включая<br>
+сохранение позиции чтения<br>
+отображение закладок<br>
+проблемы с синхронизацией<br>
+Мы не собираемся выпускать существенных обновлений BookStore для Android, пока не выпустим первую версию BookStore для iOS. (Пред...</div>  </li>
+      </ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/news">
+    Все новости...  </a>
+</div>
+  
+  
+  
+</div>  </div>
+
+</section> <!-- /.block -->
+
+<section id="block-block-19" class="block block-block book-network col-sm-6 col-md-4 col-xs-12 clearfix">
+
+        <h2 class="block-title"><span><a href="https://books.BookStore.org/" class="block-title-link">Книжная Сеть</a></span></h2>
+    
+  <div class="content">
+    <div>
+<ul><li>Облачное хранилище для вашей библиотеки.</li>
+<li>Книги хранятся в вашем Google Drive™.</li>
+<li>Книги можно объединять по авторам, сериям, и т.п.</li>
+<li>Синхронизация набора книг, позиций чтения и закладок между устройствами.</li>
+<li>Возможность управления коллекцией книг с большого компьютера.</li>
+<li>Простой доступ из браузера или из BookStore для Android.</li>
+<li>Интеграция с BookStore для других платформ появится в ближайшем будущем.</li>
+</ul></div>
+<div class="more-link"><a href="https://books.BookStore.org/">Узнать&nbsp;больше...</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://books.BookStore.org/login/google-oauth2/?next=">Войти...</a></div>
+  </div>
+ <script>window.google_analytics_domain_name = ".ru.BookStore.org";window.google_analytics_uacct = "UA-5067084-1";</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")</script>
+<script src="https://ru.BookStore.org/sites/default/files/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="https://ru.BookStore.org/sites/default/files/js/js_S5LLEvMlzws_1wst3_zLBRKrVuFykQuqpl3JZsdlRvc.js"></script>
+<script src="https://ru.BookStore.org/sites/default/files/js/js_dY77599_tJgtI1K0Oon-u1G1kOYnTtfsHt6fUGytSIw.js"></script>
+<script src="https://ru.BookStore.org/sites/default/files/js/js_n7SDg_3G3lsrZum8JIO2yMfHJeC5axjHdGR7FvI_ZaE.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-5067084-1", {"cookieDomain":".ru.BookStore.org"});ga("send", "pageview");</script>
+<script src="https://ru.BookStore.org/sites/default/files/js/js_YjE6-clANcvP44nvyZwX5OwpzpvKN9uHOb-JFoeojmI.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"cobra","theme_token":"cCV-iTcGKUJhzhV2dDK9uO2GoX88q024eEAjTLz5rOo","js":{"0":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"1":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"2":1,"modules\/locale\/locale.datepicker.js":1,"sites\/all\/modules\/contentanalysis\/contentanalysis.js":1,"sites\/all\/modules\/contentoptimizer\/contentoptimizer.js":1,"sites\/all\/modules\/google_cse\/google_cse.js":1,"sites\/all\/modules\/adsense\/contrib\/adsense_click\/adsense_click.js":1,"sites\/all\/modules\/panels\/js\/panels.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/themes\/cobra\/js\/bootstrap.min.js":1,"sites\/all\/themes\/cobra\/js\/slick.min.js":1,"sites\/all\/themes\/cobra\/js\/responsive-nav.min.js":1,"sites\/all\/themes\/cobra\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.datepicker.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/google_cse\/google_cse.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"public:\/\/css\/menu_icons.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/tagclouds\/tagclouds.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/themes\/cobra\/css\/style.min.css":1}},"googleCSE":{"cx":"005455110026126229858:ff1snftivgg","language":"","resultsWidth":480,"domain":"www.google.com"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|apk|arj|asf|asx|avi|bin|csv|deb|dmg|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"1","trackCrossDomains":["BookStore.org"]},"urlIsAjaxTrusted":{"\/":true},"jquery":{"ui":{"datepicker":{"isRTL":false,"firstDay":0}}},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+
+
+
+
+
+
+
+
+</section> <!-- /.block -->
+<div id="block--managed-1" class="block block--managed hidden-xs hidden-sm col-md-3 col-lg-4">
+
+    
+  <div class="content">
+    <div style="text-align:center"><div class="adsense">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- responsive -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2893951243869957" data-ad-slot="9276468623" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>  </div>
+</div>
+  </div>
+    </section>
+
+        
+  </div>
+    <div class="postfix-wrapper row">
+    <section class="col-sm-12">
+        <div class="region region-postfix">
+    
+<section id="block-block-18" class="block block-block front-plans col-xs-12 col-sm-6 clearfix">
+
+        <h2 class="block-title"><span>Наши планы</span></h2>
+    
+  <div class="content">
+    <ul class="plans-list"><li>BookStore для iPhone/iPad появится летом 2016 года.</li>
+<li>Новые версии для компьютера (Windows, Linux). Мы добавим всю поддержку CSS, которая есть в версии для Android и возможность синхронизации с <a href="https://books.BookStore.org/">Книжной сетью BookStore</a>.</li>
+<li>Версия для MacOS X.</li>
+<li>Дальнейшее развитие <a href="/content/bookshelf-plugin#plans">Книжной Полки</a>.</li>
+<li><a href="https://books.BookStore.org/roadmap.html">Новые возможности в Книжной сети BookStore</a>, включая и перевод на русский язык.</li>
+<li>Плагин для работы с Книжной сетью из Calibre.</li>
+</ul>  </div>
+
+</section> <!-- /.block -->
+
+<section id="block-menu-block-5" class="block block-menu-block col-xs-12 col-sm-6 menu-platforms clearfix">
+
+        <h2 class="block-title"><span>BookStore для:</span></h2>
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-5 menu-name-menu-platforms parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-1320"><a href="/node/1" title="" class="menu_icon menu-1320">Android</a></li>
+<li class="leaf menu-mlid-1322"><a href="/node/223" title="" class="menu_icon menu-1322">Linux</a></li>
+<li class="leaf menu-mlid-1333"><a href="/macos" title="" class="menu_icon menu-1333">Mac OS X</a></li>
+<li class="leaf menu-mlid-1321"><a href="/node/34" title="" class="menu_icon menu-1321">Windows</a></li>
+<li class="leaf menu-mlid-1334"><a href="/node/375" title="" class="menu_icon menu-1334">Blackberry 10</a></li>
+<li class="last leaf menu-mlid-1388"><a href="/content/other-platforms" title="" class="menu_icon menu-1388">других платформ</a></li>
+</ul></div>
+  </div>
+
+</section> <!-- /.block -->
+  </div>
+    </section>
+  </div>
+  </div>
+<footer class="footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <section class="col-sm-12">
+          <div class="region region-footer">
+    
+<section id="block-block-4" class="block block-block col-xs-12 col-sm-6 col-md-4 copyright clearfix">
+
+      
+  <div class="content">
+    <p>Copyright © 2005-2013 ООО «Геометр Плюс»<br>
+Copyright © 2013-2016 <a href="/content/about-us">BookStore.ORG Limited</a><br>
+Построено на <a href="https://drupal.org">Drupal</a><br>
+Дизайн: <a href="http://xenaspace.com/en" title="Xena Shurubura">Xena Shurubura</a></p>
+  </div>
+
+</section> <!-- /.block -->
+
+<section id="block-block-16" class="block block-block col-xs-12 col-sm-6 col-md-4 lang-switch clearfix">
+
+      
+  <div class="content">
+    <ul class="language-switcher-locale-url">
+  <li class="en first"><a href="https://BookStore.org/" class="language-link" lang="en"><span title="English" class="lang-en"></span>English</a></li>
+  <li class="ru last active"><a href="https://ru.BookStore.org/" class="language-link active" lang="ru"><span title="Русский" class="lang-ru"></span>Русский</a></li>
+</ul>  </div>
+
+</section> <!-- /.block -->
+
+<section id="block-block-3" class="block block-block col-xs-12 col-sm-6 col-md-4 shares clearfix">
+
+      
+  <div class="content">
+    <div><a href="https://www.facebook.com/BookStore" class="social-fb" title="Присоединяйтесь к BookStore на Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="https://google.com/+BookStore" class="social-gp" rel="publisher" title="Добавьте BookStore в круги Google+" target="_blank"><i class="fa fa-google-plus-square"></i></a><a href="https://twitter.com/intent/user?screen_name=BookStore_ru" class="social-tw" title="Подпишитесь на Twitter BookStore'а" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="https://www.pinterest.com/nikolaypultsin/BookStore/" class="social-pi" title="Cледите за BookStore на Pinterest" target="_blank"><i class="fa fa-pinterest-square"></i></a><a href="http://sources.BookStore.org/" class="social-gh" title="Исходники BookStore на Github" target="_blank"><i class="fa fa-github-square"></i></a></div>
+  </div>
+
+</section> <!-- /.block -->
+  </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+   
+
+
+</body></html>

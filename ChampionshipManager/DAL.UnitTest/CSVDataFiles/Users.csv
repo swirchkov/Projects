@@ -1,0 +1,4 @@
+﻿Id,Name,Surname,Patronymic,Photo,Email,PhoneNumber,Comment,Password,Role,
+"1","First","Surname","","","111@mail.com","+380961111","first comment","pass","default role",
+"2","UserEdit","Surname","","","111@mail.com","+380961111","second comment","pass","default role",
+"3","UserDelete","Surname","","","1111@maill.com","+380961111","third comment","pass","default role"

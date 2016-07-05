@@ -1,0 +1,141 @@
+﻿@using BLL.DTO;
+@{
+    UserDTO user = (UserDTO)Session["User"];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @{ string name = ViewBag.Title != null ? ViewBag.Title : "Untitled";  }
+    <title>@name</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/eng-messages.css" />
+</head>
+<body>
+    <div class="navbar navbar-fixed-top border-underline">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 lang-switch-container">
+                    <a class="lang-switch-link">
+                        EN
+                    </a>
+                    <a class="lang-switch-link">
+                        RU
+                    </a>
+                </div>
+
+                @if (user == null)
+                {
+                    <div class="col-lg-8 text-center">
+                        <h2 class="layout-header">
+                            Сайт проведения турниров между пользователями
+                        </h2>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-lg-offset-1 col-lg-6">
+                        <div class="row search-wrapper">
+                            <div class="col-lg-10 no-paddings no-margins">
+                                @{  string query = (string)Session["query"];
+                                    if (query != null) { Session.Remove("query"); }
+                                }
+                                <input type="text" class="form-control layout-search-box" id="searchBox" 
+                                       placeholder="Введите название турнира для поиска"
+                                       @if (query != null) { <text> value="@query" </text> } />
+        
+                                    </div>
+        
+                                    <a href="#searchTournamentBtn" class="col-lg-2 btn btn-info layout-search-btn" id="searchTournamentBtn">
+                                <span class="glyphicon glyphicon-search">
+
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                }
+
+                <div @if (user == null) { <text> class= "col-lg-2"</text> } else { <text>class="col-lg-3"</text> }>
+                    <div class="account-layout-container">
+                        @if (user == null)
+                        {
+                            <a href="/Account/Login" class="main-login-link"> Login </a>
+                            <a href="/Account/Register" class="main-login-link"> Register </a>
+                        }
+                        else
+                        {
+                            if (user.IsEmailVerified)
+                            {
+                                <div class="dropdown">
+                                    <a href="#" class="authorized-login-link dropdown-toggle"
+                                       data-toggle="dropdown">
+                                        Здраствуйте, @user.Email
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-list">
+                                        <li>
+                                            <a href="/Account/Profile">
+                                                Управление профилем
+                                            </a>
+                                        </li>
+                                        @if (user.Role == "Admin")
+                                        {
+                                            <li>
+                                                <a href="/Admin">
+                                                    Панель администратора
+                                                </a>
+                                            </li>
+                                        }
+                                        <li>
+                                            <a href="/Account/LogOut">
+                                                Выйти
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <a href="#" class="authorized-login-link" onclick="return false;">
+                                    Здраствуйте, @user.Email
+                                </a>
+                            }
+                        }
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer class="container layout-footer">
+        <div class="col-lg-3">
+            <a href="/About/" class="footer-link">
+                About System
+            </a>
+        </div>
+        <div class="col-lg-offset-8">
+            <span class="right-footer-subscribe">
+                Сайт проведение турниров между зарегистрироваными пользователями
+            </span>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @if (user != null)
+    {
+        <script src="~/Scripts/Layout/search.js"></script>
+    }
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,9 @@
+#:E:\Repo\bookstore\BllPartCompatible\BllPart.xproj
+E:\Repo\bookstore\BllPartCompatible\BllPart.xproj|E:\Repo\bookstore\DalPartCompatible\DalPart.xproj
+#:E:\Repo\bookstore\WebApp\WebApp.xproj
+E:\Repo\bookstore\WebApp\WebApp.xproj|E:\Repo\bookstore\BllPartCompatible\BllPart.xproj
+E:\Repo\bookstore\BllPartCompatible\BllPart.xproj|E:\Repo\bookstore\DalPartCompatible\DalPart.xproj
+#:E:\Repo\bookstore\ConsoleInitializer\ConsoleInitializer.xproj
+E:\Repo\bookstore\ConsoleInitializer\ConsoleInitializer.xproj|E:\Repo\bookstore\BllPartCompatible\BllPart.xproj
+E:\Repo\bookstore\ConsoleInitializer\ConsoleInitializer.xproj|E:\Repo\bookstore\DalPartCompatible\DalPart.xproj
+E:\Repo\bookstore\BllPartCompatible\BllPart.xproj|E:\Repo\bookstore\DalPartCompatible\DalPart.xproj

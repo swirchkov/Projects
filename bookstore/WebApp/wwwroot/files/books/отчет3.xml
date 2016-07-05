@@ -1,0 +1,801 @@
+<pages>
+  <page>
+    <token>
+      <paragraph> user@vc-165-2-2 MINGW32 /d/git_repo
+$ git init
+Initialized empty Git repository in D:/git_repo/.git/
+
+user@vc-165-2-2 MINGW32 /d/git_repo (master)
+
+командой git init инициализируем репозиторий в папке
+
+-----------------------------------------------------------------------------------------
+
+git clone клонирует репозиторий из удаленого сервера
+$ git clone ssh://pi14.abramenko.roman@10.12.87.1:8022/var/git/pi-14-3-3
+Cloning into 'pi-14-3-3'...
+The authenticity of host '[10.12.87.1]:8022 ([10.12.87.1]:8022)' can't be established.
+RSA key fingerprint is SHA256:ghzm5aduvWrtUxfWjBl7F1ItG4TpC0upTenScLhAjYM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[10.12.87.1]:8022' (RSA) to the list of known hosts.
+pi14.abramenko.roman@10.12.87.1's password:
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+------------------------------------------------------------------------------------------
+
+2. Создать в ней рабочий каталог c именем student_name (где name – Ваша
+фамилия).
+3. Создать в рабочем каталоге 3 файла проекта: (пример hello_name.rb) (где
+name – Ваша фамилия).
+
+
+сделано
+
+-----------------------------------------------------------------------------------------
+- проверить статус репозитория
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached &amp;lt;file&amp;gt;..." to unstage)
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> 
+        new file:   student_abaramenko/hello.txt
+
+Untracked files:
+  (use "git add &amp;lt;file&amp;gt;..." to include in what will be committed)
+
+        student_abaramenko/hello2.txt
+        student_abaramenko/hello3.txt
+
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+
+----------------------------------------------------------------------------------
+проиндексировали файли
+
+$ git add .
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached &amp;lt;file&amp;gt;..." to unstage)
+
+        new file:   student_abaramenko/hello.txt
+        new file:   student_abaramenko/hello2.txt
+        new file:   student_abaramenko/hello3.txt
+
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+
+------------------------------------------------------------------------------------
+5. Сделать первый commit с комментарием ‘’first commit name” (где name –
+Ваша фамилия)
+
+
+$ git commit -m "first commit abramenko"
+[master (root-commit) 3f62620] first commit abramenko
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph>  3 files changed, 2 insertions(+)
+ create mode 100644 student_abaramenko/hello.txt
+ create mode 100644 student_abaramenko/hello2.txt
+ create mode 100644 student_abaramenko/hello3.txt
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+
+-------------------------------------------------------------------------------------
+6. Сделать изменения в файлах.
+- cделать commit изменений.
+
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes not staged for commit:
+  (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   student_abaramenko/hello.txt
+        modified:   student_abaramenko/hello2.txt
+        modified:   student_abaramenko/hello3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+$ git add .
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+$ git commit -m "second commit abramenko"
+[master 62542c0] second commit abramenko
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+
+user@vc-165-2-2 MINGW32 /d/git_repo/pi-14-3-3 (master)
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+1. Сделать изменения в одном из файлов – файл 1.
+Проиндексировать файл
+
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> $ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes not staged for commit:
+  (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   Svirchkov/text1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes to be committed:
+  (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)
+
+        modified:   Svirchkov/text1.txt
+
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+----------------------------------------------------------------------------
+2. Сделать новые изменения в файле1.
+- проверить статус
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes to be committed:
+  (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)
+
+        modified:   Svirchkov/text1.txt
+
+Changes not staged for commit:
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph>   (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   Svirchkov/text1.txt
+
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+------------------------------------------------------------------------------
+3. Сделать commit
+- проверить статус
+
+$ git commit -m "3 commit"
+[master 97d645f] 3 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes not staged for commit:
+  (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   Svirchkov/text1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+
+------------------------------------------------------------------------------
+4. Вывести историю проекта. $ git log
+$ git log
+commit 97d645fff488b7c870478c0dd6dac01f807d7edc
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 08:44:23 2016 +0300
+
+    3 commit
+
+commit ba3bc751c0b885fc014ea0c2bba0e74c07bc75b7
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 08:40:10 2016 +0300
+
+    second commit
+
+commit 21642d67e44bda42412518578f6cb627605e2c01
+Author: Владимир Сверчков &amp;lt;Владимир Сверчков&amp;gt;
+Date:   Sat May 28 08:32:05 2016 +0300
+
+    first commit svirchkov
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+5. Используйте команду $ git log --pretty=oneline , настраивая
+соответствующие параметры выведите на экран последние commits за 5
+минут.
+$ git log --pretty=oneline --since=5.minutes
+2b4b85c1d263d59bb6cb613c0b218ff3b61a60c8 fourth commit
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+Часть 3. Работа с предыдущими состояниями репозитория.
+
+1. Выполните возврат состояния файлов рабочего каталога на второй commit со времени начала лаб.работы ( ОБЯЗАТЕЛЬНО используйте
+команду git checkout &amp;lt;hash&amp;gt;)
+
+$ git checkout ba3bc751
+Note: checking out 'ba3bc751'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &amp;lt;new-branch-name&amp;gt;
+
+HEAD is now at ba3bc75... second commit
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> 
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 ((ba3bc75...))
+
+2. Произведите возврат состояния файлов к последнему commit .
+
+$ git checkout master
+Previous HEAD position was ba3bc75... second commit
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Часть 4. Работа с тэгами.
+1. Создайте тэг в текущем snapshot репозитория. Название тэга - V1_name (где
+name – Ваша фамилия)
+$ git tag -a V1_Svirchkov -m "tag created"
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git tag
+V1_Svirchkov
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git show V1_Svirchkov
+tag V1_Svirchkov
+Tagger: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 09:32:55 2016 +0300
+
+tag created
+
+commit 2b4b85c1d263d59bb6cb613c0b218ff3b61a60c8
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 08:52:16 2016 +0300
+
+    fourth commit
+
+diff --git a/Svirchkov/text1.txt b/Svirchkov/text1.txt
+index 8a5f7b5..526ed56 100644
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> --- a/Svirchkov/text1.txt
++++ b/Svirchkov/text1.txt
+@@ -1 +1 @@
+-first content v 3.0
+\ No newline at end of file
++first content v 3.1
+\ No newline at end of file
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+----------------------------------------------------------------------------------
+2. Выполните изменения и как минимум два commits в текущем каталоге.
+$ git commit -a -m "5 commit"
+[master b87fbe9] 5 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git commit -a -m "6 commit"
+[master 5329e3a] 6 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+-------------------------------------------------------------------------------------
+3. Продемонстрируйте возврат к состоянию репозитория помеченную тегом.
+$ git checkout V1_Svirchkov
+Note: checking out 'V1_Svirchkov'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b &amp;lt;new-branch-name&amp;gt;
+
+HEAD is now at 2b4b85c... fourth commit
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 ((V1_Svirchkov))
+----------------------------------------------------------------------------------------
+4. Выполните возврат к последнему состоянию master.
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> $ git checkout master
+Previous HEAD position was 2b4b85c... fourth commit
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Часть 5. Работа с функцией revert.
+1. Выполните изменения текущего состояния рабочего каталога.
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes not staged for commit:
+  (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   Svirchkov/text3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+--------------------------------------------------------------------------------------------------
+2. Проиндексируйте изменения.
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes to be committed:
+  (use "git reset HEAD &amp;lt;file&amp;gt;..." to unstage)
+
+        modified:   Svirchkov/text3.txt
+
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> -------------------------------------------------------------------------------------------------
+3. Командой revert верните исходное состояние файлов.
+
+$ git log --pretty=oneline
+1223615c870bfb3a5a16cea6a981944e7c17a1bb Revert "changes commit"
+0bbbce78efd0b3d2914a1ed2896da0f39226c4d1 changes commit
+5329e3a4dd83be9d1ff0e5523b433ed7dc8a99dd 6 commit
+b87fbe9411f909a23593f448108831edf0e02a1e 5 commit
+2b4b85c1d263d59bb6cb613c0b218ff3b61a60c8 fourth commit
+97d645fff488b7c870478c0dd6dac01f807d7edc 3 commit
+ba3bc751c0b885fc014ea0c2bba0e74c07bc75b7 second commit
+21642d67e44bda42412518578f6cb627605e2c01 first commit svirchkov
+-----------------------------------------------------------------------------------------------
+4. Сделайте изменения состояния каталога.
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+Changes not staged for commit:
+  (use "git add &amp;lt;file&amp;gt;..." to update what will be committed)
+  (use "git checkout -- &amp;lt;file&amp;gt;..." to discard changes in working directory)
+
+        modified:   Svirchkov/text3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+----------------------------------------------------------------------------------------------------
+5. Проиндексируйте и выполните commit.
+$ git commit -a -m "7 commit"
+[master 631d92b] 7 commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+-------------------------------------------------------------------------------------------------------
+6. Выполните revert последнего commit
+$ git log --pretty=oneline
+631d92b67b4e2ca95101a6468d86e6d28ee82dc0 7 commit
+1223615c870bfb3a5a16cea6a981944e7c17a1bb Revert "changes commit"
+0bbbce78efd0b3d2914a1ed2896da0f39226c4d1 changes commit
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> 5329e3a4dd83be9d1ff0e5523b433ed7dc8a99dd 6 commit
+b87fbe9411f909a23593f448108831edf0e02a1e 5 commit
+2b4b85c1d263d59bb6cb613c0b218ff3b61a60c8 fourth commit
+97d645fff488b7c870478c0dd6dac01f807d7edc 3 commit
+ba3bc751c0b885fc014ea0c2bba0e74c07bc75b7 second commit
+21642d67e44bda42412518578f6cb627605e2c01 first commit svirchkov
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git revert 631d92b67 --no-edit
+[master 3fb4eac] Revert "7 commit"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+--------------------------------------------------------------------------------------------
+7. Продемонстрируйте log.
+$ git log
+commit 3fb4eac29432e3aa1995bfb34b8060989aeb0941
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 10:01:38 2016 +0300
+
+    Revert "7 commit"
+
+    This reverts commit 631d92b67b4e2ca95101a6468d86e6d28ee82dc0.
+
+commit 631d92b67b4e2ca95101a6468d86e6d28ee82dc0
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 09:57:51 2016 +0300
+
+    7 commit
+
+commit 1223615c870bfb3a5a16cea6a981944e7c17a1bb
+
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+------------------------------------------------------------------------------------------
+Часть 6. Создание ветвей и слияние.
+1. Создайте новую ветвь greet_name (где name – Ваша фамилия),используя команду
+git checkout -b &amp;lt;branchname&amp;gt;
+
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> $ git checkout -b greet_name
+Switched to a new branch 'greet_name'
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+--------------------------------------------------------------------------------------------
+2. Добавьте новый каталог (пример lib_name) и файл greeter_name.rb c
+содержимым:
+class Greeter
+ def initialize(who)
+ @who = who
+ end
+ def greet
+ "Hello, #{@who}"
+ end
+end
+-----------------------------------------------------------------------------------------------
+3. Сделайте 3 commits в ветку greet_name
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -m "class Greeter created"
+[greet_name 6d9ba77] class Greeter created
+ 1 file changed, 8 insertions(+)
+ create mode 100644 Svirchkov/lib_name/greter_name.rb
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text3 corrected"
+[greet_name 66e65d9] text3 corrected
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text2 corrected"
+[greet_name 53eb595] text2 corrected
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+----------------------------------------------------------------------------------------------
+4. Продемонстрируйте переключение на ветку master.
+$ git checkout master
+Switched to branch 'master'
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+-----------------------------------------------------------------------------------------------
+5. Создайте файл README и произведите commit в master
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git commit -m "readme txt created in master"
+[master cbf6b1a] readme txt created in master
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Svirchkov/readme.txt
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+------------------------------------------------------------------------------------------------
+6. Произведите слияние ветвей greet и master – продемонстрируйте историю commits. (используйте опцию Fast forward).
+$ git merge greet_name -m "greet_name merged to master"
+Merge made by the 'recursive' strategy.
+ Svirchkov/lib_name/greter_name.rb | 8 ++++++++
+ Svirchkov/text2.txt               | 2 +-
+ Svirchkov/text3.txt               | 2 +-
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 Svirchkov/lib_name/greter_name.rb
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git log
+commit cdfcb2d596b4ef09b8e17d9fc20dc8212d048b99
+Merge: cbf6b1a 53eb595
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 10:21:42 2016 +0300
+
+    greet_name merged to master
+
+    Please enter a commit message to explain why this merge is necessary,
+    # especially if it merges an updated upstream into a topic branch.
+    #
+    # Lines starting with '#' will be ignored, and an empty message aborts
+    # the commit.
+
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> commit cbf6b1ac8f6542f54384aa49c675ba6f9e347769
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 10:15:15 2016 +0300
+
+    readme txt created in master
+
+commit 53eb595575dc377011ea6786dfabd5db07c8558c
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 10:12:38 2016 +0300
+
+    text2 corrected
+
+commit 66e65d939343ef3ccbb3486b43836351264efb00
+Author: Svirchkov &amp;lt;swirchkov@gmail.com&amp;gt;
+Date:   Sat May 28 10:12:16 2016 +0300
+
+    text3 corrected
+
+commit 6d9ba77ca3dc1e429d996cee2579aa55d3234f6b
+
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+Часть 7.
+Смоделируйте искусственно конфликт, при слиянии описанном в
+предыдущей части.
+
+$ git checkout greet_name
+Switched to branch 'greet_name'
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text2 corrected"
+[greet_name 0c8b62c] text2 corrected
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git checkout master
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git commit -a -m "text2 corrected by other way"
+[master d663a99] text2 corrected by other way
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+$ git merge greet_name -m "merging greet_name to master "
+Auto-merging Svirchkov/text2.txt
+CONFLICT (content): Merge conflict in Svirchkov/text2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master|MERGING)
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Часть 8.
+Используя команду reset верните указатель на состояние ветвей до
+их слияния.
+$ git reset d663a99
+Unstaged changes after reset:
+M       Svirchkov/text2.txt
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+Часть 9. Проделайте шаги 3-5 в части 6. Выполните слияние
+изменений командой rebase. Изобразите в удобном для Вас
+графическом редакторе граф коммитов, где вершинами графа будут
+коды коммитов.
+-------------------------------------------------------------------
+3. Сделайте 3 commits в ветку greet_name
+$ git checkout greet_name
+Switched to branch 'greet_name'
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text2 corrected"
+[greet_name e45c6a1] text2 corrected
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text2 corrected"
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> [greet_name 22fccc0] text2 corrected
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git commit -a -m "text2 corrected"
+[greet_name 6953e40] text2 corrected
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+-----------------------------------------------------------------------------
+4. Продемонстрируйте переключение на ветку master.
+$ git checkout master
+Switched to branch 'master'
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+-----------------------------------------------------------------------------
+5. Создайте файл README и произведите commit в master.
+$ git commit -a -m "readme txt edited"
+[master 08e5cd2] readme txt edited
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (master)
+------------------------------------------------------------------------------------
+Выполнение команды rebase
+------------------------------------------------------------------------------------
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: text2 corrected
+Using index info to reconstruct a base tree...
+M       Svirchkov/text2.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Svirchkov/text2.txt
+CONFLICT (content): Merge conflict in Svirchkov/text2.txt
+error: Failed to merge in the changes.
+Patch failed at 0001 text2 corrected
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+When you have resolved this problem, run "git rebase --continue".
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> If you prefer to skip this patch, run "git rebase --skip" instead.
+To check out the original branch and stop rebasing, run "git rebase --abort".
+
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name|REBASE 1/4)
+$ git rebase --continue
+Svirchkov/text2.txt: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name|REBASE 1/4)
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name|REBASE 1/4)
+$ git rebase --continue
+Applying: text2 corrected
+Applying: text2 corrected
+Using index info to reconstruct a base tree...
+M       Svirchkov/text2.txt
+Falling back to patching base and 3-way merge...
+Auto-merging Svirchkov/text2.txt
+CONFLICT (content): Merge conflict in Svirchkov/text2.txt
+error: Failed to merge in the changes.
+Patch failed at 0002 text2 corrected
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+
+When you have resolved this problem, run "git rebase --continue".
+If you prefer to skip this patch, run "git rebase --skip" instead.
+To check out the original branch and stop rebasing, run "git rebase --abort".
+
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name|REBASE 2/4)
+$ git add .
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name|REBASE 2/4)
+$ git rebase --continue
+Applying: text2 corrected
+Applying: text2 corrected
+Applying: text2 corrected
+
+ </paragraph>
+    </token>
+  </page>
+  <page>
+    <token>
+      <paragraph> User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+$ git log --pretty=oneline
+d7558278fbbed54f7cd4e3d9e2f7c5935a0a23cd text2 corrected
+e85eda56b2475894999b42e5c7704a009752f5f0 text2 corrected
+d32fa2984b8d45e1333a807bee57418ce5c89ee8 text2 corrected
+b5bbd0ba98d65d1c896a83c0982ca458d3ebb1ae text2 corrected
+08e5cd2d1bab412c3a0b3fec2dc81060ce793037 readme txt edited
+d663a99a02472bc752f5beb6ee4edd2b6198cc3e text2 corrected by other way
+cdfcb2d596b4ef09b8e17d9fc20dc8212d048b99 greet_name merged to master
+cbf6b1ac8f6542f54384aa49c675ba6f9e347769 readme txt created in master
+53eb595575dc377011ea6786dfabd5db07c8558c text2 corrected
+66e65d939343ef3ccbb3486b43836351264efb00 text3 corrected
+6d9ba77ca3dc1e429d996cee2579aa55d3234f6b class Greeter created
+3fb4eac29432e3aa1995bfb34b8060989aeb0941 Revert "7 commit"
+631d92b67b4e2ca95101a6468d86e6d28ee82dc0 7 commit
+1223615c870bfb3a5a16cea6a981944e7c17a1bb Revert "changes commit"
+0bbbce78efd0b3d2914a1ed2896da0f39226c4d1 changes commit
+5329e3a4dd83be9d1ff0e5523b433ed7dc8a99dd 6 commit
+b87fbe9411f909a23593f448108831edf0e02a1e 5 commit
+2b4b85c1d263d59bb6cb613c0b218ff3b61a60c8 fourth commit
+97d645fff488b7c870478c0dd6dac01f807d7edc 3 commit
+ba3bc751c0b885fc014ea0c2bba0e74c07bc75b7 second commit
+21642d67e44bda42412518578f6cb627605e2c01 first commit svirchkov
+
+User@DESKTOP-BD3SG29 MINGW64 /d/Projects/git/pi-14-3-3 (greet_name)
+
+
+217.12.194.171
+10.12.87.1
+ </paragraph>
+    </token>
+  </page>
+</pages>

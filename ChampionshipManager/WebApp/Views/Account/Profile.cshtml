@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Profile";
+}
+
+<div class="login-container" id="mainContainer">
+
+    <div class="text-center login-header">
+
+        <div class="login-header-title">
+
+            To edit profile enter first your's credentials
+
+        </div>
+
+    </div>
+
+    <form method="post" id="LoginForm">
+
+        <div class="login-body">
+
+            <div class="form-group">
+
+                <label class="col-lg-4 text-right login-label" for="Login">
+                    Электронный адрес
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="text" name="Login" id="Login" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="Password" class="col-lg-4 text-right login-label">
+                    Пароль
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="password" name="Password" id="Password" class="form-control" required />
+                </div>
+
+            </div>
+
+            <div class="form-group text-center" id="ErrorContainer">
+                <span class="margin-top-15 admin-user-edit-error-message" id="ErrorMessage">
+                    error message
+                </span>
+            </div>
+
+        </div>
+
+        <div class="login-footer text-center">
+            <div class="submit-btn">
+                <input type="button" class="btn btn-success" value="Войти" onclick="submitLoginForm();" />
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/Account/profile.js"></script>
+}

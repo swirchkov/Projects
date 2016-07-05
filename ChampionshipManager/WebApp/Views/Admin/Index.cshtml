@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row" ng-app="adminApp" ng-controller="main">
+
+    <!-- switch buttons -->
+    <div class="col-lg-2 admin-switch-container">
+
+        <a href="#/tournaments" class="admin-switch-link text-center" ng-click="mode = 'Tournaments';"
+           ng-class="mode == 'Tournaments' ? 'admin-switch-active-link' : 'border-bottom-none'">
+            Турниры
+        </a>
+
+        <a href="#/users" class="admin-switch-link text-center" ng-click="mode = 'Users';"
+           ng-class="mode == 'Users' ? 'admin-switch-active-link' : 'border-top-none'">
+            Пользователи
+        </a>
+
+    </div>
+
+    <div class="col-lg-10 admin-main-right-block text-center">
+        <ng-view>
+
+        </ng-view>
+    </div>
+
+</div>
+@section Scripts {
+    <script src="~/Scripts/tooltipActivation.js"></script>
+}
+
+<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/angular-route.min.js"></script>
+
+<script src="~/Scripts/AdminPage/app.js"></script>
+
+<script src="~/Scripts/AdminPage/Services/TournamentFormSenderService.js"></script>
+<script src="~/Scripts/AdminPage/Services/TournamentFilterService.js"></script>
+<script src="~/Scripts/AdminPage/Services/SelectService.js"></script>
+
+<script src="~/Scripts/AdminPage/Controllers/mainController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/TournamentController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/CreateTournamentController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/ManageTournamentController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/GamesController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/UsersController.js"></script>
+<script src="~/Scripts/AdminPage/Controllers/ManageUserController.js"></script>

@@ -1,0 +1,87 @@
+﻿<header class="row admin-tournament-header">
+    
+    <h2 class="col-lg-10 text-center no-margins">
+        Управление профилями пользователей
+    </h2>
+
+</header>
+
+<article>
+
+    <div class="admin-search-container row">
+        <div class="col-lg-offset-4 col-lg-4 search-wrapper admin-tournament-search-wrapper row">
+            <div class="col-lg-10 no-paddings">
+                <input type="text" class="form-control layout-search-box" ng-model="Query"
+                       placeholder="Введите запрос для поиска пользователя по ФИО" />
+            </div>
+
+            <a class="col-lg-2 btn btn-info layout-search-btn" href="#" ng-click="searchByPattern();">
+                <span class="glyphicon glyphicon-search">
+
+                </span>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="admin-users-search-container" >
+
+        <table class="table">
+            
+            <caption class="users-search-table-caption">
+                Найденные результаты
+            </caption>
+
+            <thead>
+                <tr class="row">
+                    <th class="col-lg-3 text-center">
+                        Аватар
+                    </th>
+                    <th class="col-lg-3 text-center">
+                        Имя
+                    </th>
+                    <th class="col-lg-3 text-center">
+                        Електронная почта
+                    </th>
+                    <th class="col-lg-3 text-center">
+                        Действия
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row" ng-repeat="user in Users">
+
+                    <td>
+                        <img class="img-circle" width="170" height="120" ng-src="{{ user.Photo }}" />
+                    </td>
+
+                    <td colspan="2">
+                        <div class="user-name-email-container">
+                            <span ng-bind="user.Name + ' ' + user.Surname">
+                            </span>
+                            <span ng-bind="user.Email">
+                            </span>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="user-control-container">
+                            <a href="#/userManagement" class="btn btn-info user-control text-center"
+                               ng-click="editUser(user);">
+                                <span class="glyphicon glyphicon-edit">
+
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-danger user-control text-center">
+                                <span class="glyphicon glyphicon-remove">
+
+                                </span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</article>

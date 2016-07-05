@@ -1,0 +1,64 @@
+﻿@using BLL.DTO
+@model IEnumerable<TournamentSearchDTO>
+@{
+    ViewBag.Title = "Поиск турниров";
+}
+
+<header class="text-center">
+    <h2>
+        Список найденных турниров
+    </h2>
+</header>
+
+<div class="container tournament-list-container">
+
+    <div class="row">
+        @foreach (var tour in Model)
+        {
+            <div class="col-lg-6 row">
+                <div class="tournament-image col-lg-5">
+                    <img src="@tour.Logo" class="tournament-image-element" height="150" />
+                </div>
+
+                <div class="tournament-image-info col-lg-6">
+                    <div>
+                        Название турнира - @tour.Name
+                    </div>
+
+                    <div>
+                        Учасников - @tour.CurrentParticipateNumber (@tour.RequiredParticipateNumber)
+                    </div>
+                    @{ string id = "participateLink" + tour.Id; }
+                    @if (!tour.IsStarted)
+                    {
+                        if (tour.Status == UserInTournamentStatus.NoRelation)
+                        {
+                            <a href="#" class="participate-link" onclick="participate(@tour.Id);"
+                               id="@id">
+                                Участвовать
+                            </a>
+                        }
+                        else if (tour.Status == UserInTournamentStatus.SendedRequest)
+                        {
+                            <a href="#" class="participate-link text-warning" onclick="return false;">
+                                Вы уже отправили заявку на участие в турнире
+                            </a>
+                        }
+
+                    }
+                    else
+                    {
+                        <a href="#" class="participate-link link-disabled" onclick="return false;">
+                            Турнир уже начался
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/Tournament/Search/participate.js"></script>
+}
+

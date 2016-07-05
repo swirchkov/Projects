@@ -1,0 +1,53 @@
+﻿@model WebApp.ViewModels.Notes.PageViewModel
+@{
+    int currentDisplayPage = Model.Page + 1;
+    int prevPage = Model.Page - 1;
+    int nextPage = Model.Page + 1;
+    int maxPageDisplay = Model.CountPage - 1;
+}
+
+<header class="container-fluid">
+    <h1 class="page-content-header text-center">
+        @Model.Title
+    </h1>
+</header>
+
+<div class="page-content-container text-justify">
+    @Html.Raw(Model.HtmlContent)
+</div>
+
+<div class="container-fluid text-center">
+    <footer class="col-lg-offset-5 col-lg-2 page-content-footer">
+        @if (Model.Page >= 1)
+        {
+            <a asp-action="Index" asp-controller="Notes" asp-route-page="@prevPage"
+               asp-route-bookId="@Model.BookId">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+        }
+        else
+        {
+            <a class="a-disabled" href="#">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+        }
+
+        <span>
+            @currentDisplayPage (@maxPageDisplay)
+        </span>
+
+        @if (currentDisplayPage < maxPageDisplay)
+        {
+            <a asp-action="Index" asp-controller="Notes" asp-route-page="@nextPage"
+               asp-route-bookId="@Model.BookId">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        }
+        else
+        {
+            <a class="a-disabled" href="#">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        }
+    </footer>
+</div>

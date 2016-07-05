@@ -1,0 +1,91 @@
+﻿<div class="login-container profile-container">
+
+    <div class="text-center login-header">
+
+        <div class="login-header-title">
+
+            Редактирование профиля {{ User.Name }}
+
+        </div>
+
+    </div>
+
+    <form method="post" enctype="multipart/form-data" id="userEditForm">
+
+        <div class="login-body">
+
+            <div class="form-group">
+
+                <label class="col-lg-4 text-right login-label" for="Login">
+                    Электронный адрес
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20">
+                    <input type="email" name="Email" id="Email" class="form-control" required 
+                           ng-model="User.Email"/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="FullName" class="col-lg-4 text-right login-label margin-top-15">
+                    Полное имя
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20 margin-top-8">
+                    <input type="text" name="FullName" id="FullName" class="form-control" pattern="[^ ]+ [^ ]+ [^ ]+" required
+                           title="firstname patronymic surname" ng-model="User.FullName"/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber" class="col-lg-4 text-right login-label margin-top-15">
+                    Номер телефона
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20 margin-top-8">
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" class="form-control" required
+                           pattern="[(]?\d{3}[)]?\s\d{7}" title="example '(099) 1111111''" 
+                           ng-model="User.PhoneNumber"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-lg-4 text-right login-label margin-top-15">
+                    Фото пользователя
+                </label>
+
+                <div class="col-lg-8 text-left no-paddings margin-bottom-20 margin-top-8 font-size-20">
+                    <img ng-src="{{User.Photo}}" width="220" height="150" />
+                    <a href="#" class="text-danger margin-top-20" ng-click="deleteAvatar();"
+                       ng-class="User.IsDefaultPhoto ? 'link-disabled' : ''">
+                        <span class="glyphicon glyphicon-remove">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="form-group text-center" ng-show="hasMessage">
+                <span class="margin-top-15 admin-user-edit-error-message" ng-bind="Message"
+                      ng-class="IsSuccessMessage ? 'text-success' : 'text-danger'">
+                    error message
+                </span>
+            </div>
+        </div>
+
+        <div class="login-footer text-center">
+            <div class="submit-btn">
+                <input type="submit" class="btn btn-success margin-top-15" value="Редактировать" 
+                       ng-click="editUser();" />
+                <a href="#/users" class="btn btn-danger margin-top-15">
+                    Отмена
+                </a>
+            </div>
+        </div>
+
+    </form>
+
+</div>

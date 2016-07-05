@@ -1,0 +1,4 @@
+﻿Id, Name, Logo, ParticipateNumber, SportKind, IsStarted, IsFinished
+1, "APL", "some", 10, "football", "true", "true",
+2, "APLEdit", "some", 10, "football", "true", "true",
+3, "APLDelete", "some", 10, "football", "true", "false"

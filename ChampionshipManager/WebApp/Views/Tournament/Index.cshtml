@@ -1,0 +1,159 @@
+﻿@model WebApp.Models.Tournament.TournamentMainViewModel
+
+@{
+    ViewBag.Title = "Index";
+
+    const string SENDED_REQUEST = "Sended Request";
+    const string NOT_STARTED = "Not Started";
+    const string IN_PROCESS = "In Process";
+    const string FINISHED = "Finished";
+}
+
+<nav class="row margin-bottom-20">
+    
+    <a href="#" class="col-lg-3 text-center tournament-nav-link" onclick="loadTournaments('@SENDED_REQUEST');">
+        Отправленна заявка
+    </a>
+
+    <a href="#" class="col-lg-3 text-center tournament-nav-link" onclick="loadTournaments('@NOT_STARTED');">
+        Заявка принята, но турнир не начат
+    </a>
+
+    <a href="#" class="col-lg-3 text-center tournament-nav-link" onclick="loadTournaments('@IN_PROCESS');">
+        Турнир начат
+    </a>
+
+    <a href="#" class="col-lg-3 text-center tournament-nav-link" onclick="loadTournaments('@FINISHED');">
+        Турнир окончен
+    </a>
+
+</nav>
+
+<main id="pageContent">
+    @Html.Action("TournamentsByStatus", new { status = IN_PROCESS })
+</main>
+
+@section Scripts {
+    <script src="~/Scripts/Tournament/Index/main.js"></script>    
+}
+
+@*<header class="text-center tournament-header">
+    <h3> Список турниров, в процессе </h3>
+</header>
+
+<main>
+
+    <article class="tournament-container">
+
+        <div class="row header-tournament-row">
+
+            <span class="col-lg-4 text-bold text-center">
+                Наименование турнира
+            </span>
+
+            <span class="col-lg-4 text-bold text-center">
+                Ваше количество очков - Х
+            </span>
+
+            <span class="col-lg-4 text-bold text-center">
+                Ваша позиция - У
+            </span>
+        </div>
+
+        <div class="row tournament-game-row">
+            <span class="col-lg-4 text-center">
+                Первый участник
+            </span>
+
+            <span class="col-lg-4 text-center">
+                счет
+            </span>
+
+            <span class="col-lg-2 text-right">
+                Вторый участник
+            </span>
+
+            <span class="col-lg-2 text-center date-game-field">
+                Дата и время начала
+            </span>
+        </div>
+
+        <div class="row tournament-game-row-inverse">
+            <span class="col-lg-4 text-center">
+                Первый участник
+            </span>
+
+            <span class="col-lg-4 text-center">
+                счет
+            </span>
+
+            <span class="col-lg-2 text-right">
+                Вторый участник
+            </span>
+
+            <span class="col-lg-2 text-center date-game-field-inverse">
+                Дата и время начала
+            </span>
+        </div>
+
+        <div class="row tournament-game-row">
+            <span class="col-lg-4 text-center">
+                Первый участник
+            </span>
+
+            <span class="col-lg-4 text-center">
+                счет
+            </span>
+
+            <span class="col-lg-2 text-right">
+                Вторый участник
+            </span>
+
+            <span class="col-lg-2 text-center date-game-field">
+                Дата и время начала
+            </span>
+        </div>
+
+        <div class="row tournament-game-row-inverse">
+            <span class="col-lg-4 text-center">
+                Первый участник
+            </span>
+
+            <span class="col-lg-4 text-center">
+                счет
+            </span>
+
+            <span class="col-lg-2 text-right">
+                Вторый участник
+            </span>
+
+            <span class="col-lg-2 text-center date-game-field-inverse">
+                Дата и время начала
+            </span>
+        </div>
+
+        <div class="row footer-tournament-row">
+            <div class="col-lg-9 text-center">
+                <span class="tournament-footer-subscribe">
+                    Наименование турнира, Ваша позиция - Х
+                </span>
+            </div>
+            <div class="col-lg-1 text-center tournament-footer-link">
+                <a href="#" id="gamesDisplayBtn#id">
+                    Игры
+                </a>
+            </div>
+            <div class="col-lg-1 text-center tournament-footer-link">
+                <a href="#" id="statisticDisplayBtn#id">
+                    Статистика
+                </a>
+            </div>
+            <div class="col-lg-1 text-center tournament-end-footer-link">
+                <a href="#" id="participateDisplayBtn#id">
+                    Участники
+                </a>
+            </div>
+        </div>
+    </article>
+</main>*@
+
