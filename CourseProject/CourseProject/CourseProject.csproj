@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5ED1C0A-F039-45F8-AFF3-176B6E5D3435}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CourseProject</RootNamespace>
+    <AssemblyName>Lab2_2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArrayCreator.Designer.cs">
+      <DependentUpon>ArrayCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateImage.Designer.cs">
+      <DependentUpon>CreateImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\3D_Figures\CuttedPyramid.cs" />
+    <Compile Include="Figures\3D_Figures\Cube.cs" />
+    <Compile Include="Figures\3D_Figures\Pyramid.cs" />
+    <Compile Include="CreateObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateObj.Designer.cs">
+      <DependentUpon>CreateObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creator.cs" />
+    <Compile Include="Figures\Figure.cs" />
+    <Compile Include="Figures\AbstractFigure.cs" />
+    <Compile Include="Figures\FiiledRhombus.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\Point.cs" />
+    <Compile Include="FormMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMod.Designer.cs">
+      <DependentUpon>FormMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\3D_Figures\InclinedPrisma.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Modifier.cs" />
+    <Compile Include="Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Move.Designer.cs">
+      <DependentUpon>Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\Rectangle.cs" />
+    <Compile Include="Figures\3D_Figures\Oktaedr.cs" />
+    <Compile Include="Figures\3D_Figures\Point3D.cs" />
+    <Compile Include="Figures\Polygone.cs" />
+    <Compile Include="Figures\3D_Figures\Prizma.cs" />
+    <Compile Include="Figures\Paralelogram.cs" />
+    <Compile Include="Figures\3D_Figures\Paralelipiped.cs" />
+    <Compile Include="MovingInPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovingInPosition.Designer.cs">
+      <DependentUpon>MovingInPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PosForm3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PosForm3D.Designer.cs">
+      <DependentUpon>PosForm3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Figures\Section.cs" />
+    <Compile Include="Modify\SectionModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify\SectionModify.Designer.cs">
+      <DependentUpon>SectionModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\Rhombus.cs" />
+    <Compile Include="Scale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scale.Designer.cs">
+      <DependentUpon>Scale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\Square.cs" />
+    <Compile Include="Figures\3D_Figures\Section3D.cs" />
+    <Compile Include="Figures\Trapezien.cs" />
+    <EmbeddedResource Include="ArrayCreator.resx">
+      <DependentUpon>ArrayCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateImage.resx">
+      <DependentUpon>CreateImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateObj.resx">
+      <DependentUpon>CreateObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMod.resx">
+      <DependentUpon>FormMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify\SectionModify.resx">
+      <DependentUpon>SectionModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Move.resx">
+      <DependentUpon>Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovingInPosition.resx">
+      <DependentUpon>MovingInPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosForm3D.resx">
+      <DependentUpon>PosForm3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Scale.resx">
+      <DependentUpon>Scale.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Function\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+D:\Книжки\Навчання\Практика\CourseProject\Lab2_2\bin\Debug\Lab2_2.exe.config
+D:\Книжки\Навчання\Практика\CourseProject\Lab2_2\obj\Debug\Lab2_2.exe
+D:\Книжки\Навчання\Практика\CourseProject\Lab2_2\obj\Debug\Lab2_2.pdb
+D:\Книжки\Навчання\Практика\CourseProject\CourseProject\bin\Debug\Lab2_2.exe.config
+D:\Книжки\Навчання\Практика\CourseProject\CourseProject\obj\Debug\Lab2_2.exe
+D:\Книжки\Навчання\Практика\CourseProject\CourseProject\obj\Debug\Lab2_2.pdb
